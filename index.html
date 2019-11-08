@@ -48,8 +48,10 @@
                 let q4ChoicesArray = ["Maine","Rhode Island", "Maryland", "Delaware"];
                 q4ChoicesArray = _.shuffle(q4ChoicesArray); //shuffles options
                 
+                //The "label for" tag allows accessibility features by enabling the option by clicking on the word
+                //instead of the radio button/checkbox 
                 for (let i = 0; i < q4ChoicesArray.length; i++) {
-                    $("#q4Choices").append(` <input type="radio" name="q4" id"${q4ChoicesArray[i]}"
+                    $("#q4Choices").append(` <input type="radio" name="q4" id="${q4ChoicesArray[i]}"
                     value="${q4ChoicesArray[i]}"> <label for="${q4ChoicesArray[i]}"> ${q4ChoicesArray[i]}</label>`);
                 }
             }//displayQ4Choices
@@ -59,7 +61,7 @@
                 q8ChoicesArray = _.shuffle(q8ChoicesArray); //shuffles options
                 
                 for (let i = 0; i < q8ChoicesArray.length; i++) {
-                    $("#q8Choices").append(` <input type="radio" name="q8" id"${q8ChoicesArray[i]}"
+                    $("#q8Choices").append(` <input type="radio" name="q8" id="${q8ChoicesArray[i]}"
                     value="${q8ChoicesArray[i]}"> <label for="${q8ChoicesArray[i]}"> ${q8ChoicesArray[i]}</label>`);
                 }
             }//displayQ8Choices
